@@ -10,7 +10,9 @@
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
 echo "Loaded calculator script.."
-
+active=true
+while [ active ]
+do
 echo "Choose operation:"
 echo "Add"
 echo "Subtract"
@@ -36,3 +38,4 @@ case $op in
 	echo -e "Result: $res\n"
 	;;
 esac
+done
