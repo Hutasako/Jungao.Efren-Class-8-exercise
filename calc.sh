@@ -37,5 +37,12 @@ case $op in
 	let res=$n1-$n2
 	echo -e "Result: $res\n"
 	;;
+	"Exit")
+	active=false
+	break
+	;;
+	*)
+	echo -e "Invalid operation.\n"
+	;;
 esac
 done
