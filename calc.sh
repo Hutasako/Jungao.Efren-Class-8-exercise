@@ -16,3 +16,23 @@ echo "Add"
 echo "Subtract"
 echo "Exit"
 read op
+case $op in
+	"Add")
+	echo "You have selected:" $op
+	echo "Enter the first number"
+	read n1
+	echo "Enter the second number"
+	read n2
+	let res=$n1+$n2
+	echo -e "Result: $res\n"
+	;;
+	"Subtract")
+	echo "You have selected:" $op
+	echo "Enter the first number"
+	read n1
+	echo "Enter the second number"
+	read n2
+	let res=$n1-$n2
+	echo -e "Result: $res\n"
+	;;
+esac
